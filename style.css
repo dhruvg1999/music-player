@@ -7,6 +7,7 @@ textarea:focus, input:focus{
     outline: none;
 }
 /* Header Section */
+
 #top{
     width: 100vw;
     margin-left: -1.5vh;
@@ -34,15 +35,123 @@ textarea:focus, input:focus{
 .account{
     font-size: 2em;
 }
+
 /* Main Section */
+
 #main{
     width: 70%;
     display: inline-block;
+    padding-top: 3vh;
+}
+#main div{
+    margin-left: 3vw;
+    margin-right: 3vw;
+    padding-bottom: 2vh;
+}
+#carousel{
+    display: flex;
+    justify-content: space-around;
+}
+#carousel img{
+    width: 18vw;
+}
+#carousel img:hover{
+    scale: 1.5;
+    z-index: 1;
+}
+#main #latest{
+    padding-top: 3vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#main #latest div img{
+    height: 12vh;
+    width: 9vw;
+    margin-left: -3vw;
+}
+#main #pop{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#main #pop a{
+    text-decoration: none;
+    color: white;
+}
+#main #pop div img{
+    height: 12vw;
+    width: 9vw;
+    border-radius: 50% 50%;
+    margin-left: -3vw;
+}
+#main #cat{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#main #cat a{
+    text-decoration: none;
+    color: white;
+}
+#main #cat div img{
+    height: 12vw;
+    width: 9vw;
+    border-radius: 50% 50%;
+    margin-left: -3vw;
+}
+#main #eng{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#main #eng a{
+    text-decoration: none;
+    color: white;
+}
+#main #eng div img{
+    height: 12vw;
+    width: 9vw;
+    border-radius: 50% 50%;
+    margin-left: -3vw;
+}
+#main #hin{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#main #hin a{
+    text-decoration: none;
+    color: white;
+}
+#main #hin div img{
+    height: 12vw;
+    width: 9vw;
+    border-radius: 50% 50%;
+    margin-left: -3vw;
+}
+#main #old{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#main #old a{
+    text-decoration: none;
+    color: white;
+}
+#main #old div img{
+    height: 12vw;
+    width: 9vw;
+    border-radius: 50% 50%;
+    margin-left: -3vw;
 }
 /* Aside Section (Queue) */
+
 #queue{
     width: 29%;
     display: inline-block;
+    position: absolute;
+    top: 16vh;
 }
 #queue h2 select{
     background-color: transparent;
@@ -71,7 +180,9 @@ textarea:focus, input:focus{
 #con{
     padding: 1vh;
 }
+
 /*Footer section (Contact) */
+
 #contact{
     width: 100vw;
     margin-left: -1.5vh;
@@ -140,6 +251,7 @@ textarea:focus, input:focus{
     background-color: white;
     color: #041E42;
 }
+
 /* Music Player Section */
 #player{
     position: fixed;
@@ -148,9 +260,39 @@ textarea:focus, input:focus{
     margin-left: -1.5vh;
     height: 15vh;
     z-index: 3;
-    background-color: #525255;
+    background-color: #282828;
     opacity: 0.4;
 }
+#player img{
+    border-radius: 50% 50%;
+    height: 20vh;
+    margin-left: 86.5vh;
+    margin-top: -9vh;
+    display: none;
+}
 #player:hover{
-    opacity: 0.8;
+    opacity: 1;
+    height: 40vh;
+}
+#player:hover img{
+    display: block;
+}
+#player audio{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+#player div{
+    height: 40%;
+    text-align: center;
+    padding-top: 1%;
+    font-size: 1.25rem;
+}
+@media screen and (orientation: portrait) {
+    #main{
+        width: 100%;
+    }
+    #queue{
+        display: none;
+    }
 }
