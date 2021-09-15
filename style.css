@@ -80,7 +80,7 @@ textarea:focus, input:focus{
     color: white;
 }
 #main #pop div img{
-    height: 12vw;
+    height: 9vw;
     width: 9vw;
     border-radius: 50% 50%;
     margin-left: -3vw;
@@ -95,7 +95,7 @@ textarea:focus, input:focus{
     color: white;
 }
 #main #cat div img{
-    height: 12vw;
+    height: 9vw;
     width: 9vw;
     border-radius: 50% 50%;
     margin-left: -3vw;
@@ -110,7 +110,7 @@ textarea:focus, input:focus{
     color: white;
 }
 #main #eng div img{
-    height: 12vw;
+    height: 9vw;
     width: 9vw;
     border-radius: 50% 50%;
     margin-left: -3vw;
@@ -125,7 +125,7 @@ textarea:focus, input:focus{
     color: white;
 }
 #main #hin div img{
-    height: 12vw;
+    height: 9vw;
     width: 9vw;
     border-radius: 50% 50%;
     margin-left: -3vw;
@@ -140,7 +140,7 @@ textarea:focus, input:focus{
     color: white;
 }
 #main #old div img{
-    height: 12vw;
+    height: 9vw;
     width: 9vw;
     border-radius: 50% 50%;
     margin-left: -3vw;
@@ -177,8 +177,12 @@ textarea:focus, input:focus{
 #a-name{
     font-size: 0.6rem;
 }
-#con{
+#queue #con{
     padding: 1vh;
+    margin-left: -1vw;
+}
+#queue #con:hover{
+    background-color: #202439;
 }
 
 /*Footer section (Contact) */

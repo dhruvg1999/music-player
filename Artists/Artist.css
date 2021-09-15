@@ -7,6 +7,7 @@ textarea:focus, input:focus{
     outline: none;
 }
 /* Header Section */
+
 #top{
     width: 100vw;
     margin-left: -1.5vh;
@@ -36,16 +37,55 @@ textarea:focus, input:focus{
 }
 
 /* Main Section */
+
 #main{
-    margin-left: 7vw;
+    width: 70%;
+    display: inline-block;
+    padding-top: 3vh;
 }
 #main #cover{
     height: 40vh;
-    width: 50vw;
+    width: 60vw;
     background-color: #141B41;
     padding-right: 3vw;
+    margin-bottom: 4vh;
     display: flex;
     flex-direction: row;
+}
+#main #cover h2{
+    font-size: 2rem;
+}
+#main a #song{
+    height: 10vh;
+    width: 63vw;
+    background-color: #1A1E33;
+    margin-bottom: 1vh;
+}
+#main a{
+    text-decoration: none;
+    color: white;
+}
+#main a #song i{
+    background-color: transparent;
+}
+#main a #song #sno{
+    position: absolute;
+    margin-left: 2vw;
+}
+#main a #song #title{
+    position: absolute;
+    margin-left: 6vw;
+}
+#main a #song #fav{
+    position: absolute;
+    margin-left: 52vw;
+}
+#main a #song #add{
+    position: absolute;
+    margin-left: 58vw;
+}
+#main #song:hover{
+    background-color: #202439;
 }
 #main #cover img{
     height: 100%;
@@ -53,8 +93,48 @@ textarea:focus, input:focus{
 #main #cover #about{
     margin-left: 2vw;
 }
+/* Aside Section (Queue) */
+
+#queue{
+    width: 29%;
+    display: inline-block;
+    position: absolute;
+    top: 16vh;
+}
+#queue h2 select{
+    background-color: transparent;
+    color: teal;
+    border: none;
+    float: right;
+}
+#queue h2 select option{
+    color: grey;
+}
+#song{
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#queue a div img{
+    height: 8vh;
+    width: 5vw;
+    margin-left: 2vh;
+    margin-right: 2vh;
+}
+#a-name{
+    font-size: 0.6rem;
+}
+#queue #con{
+    padding: 1vh;
+    margin-left: -1vw;
+}
+#queue #con:hover{
+    background-color: #202439;
+}
 
 /*Footer section (Contact) */
+
 #contact{
     width: 100vw;
     margin-left: -1.5vh;
@@ -122,4 +202,49 @@ textarea:focus, input:focus{
 #contact #request button:hover{
     background-color: white;
     color: #041E42;
+}
+
+/* Music Player Section */
+#player{
+    position: fixed;
+    bottom: 0%;
+    width: 100vw;
+    margin-left: -1.5vh;
+    height: 15vh;
+    z-index: 3;
+    background-color: #282828;
+    opacity: 0.4;
+}
+#player img{
+    border-radius: 50% 50%;
+    height: 20vh;
+    margin-left: 86.5vh;
+    margin-top: -9vh;
+    display: none;
+}
+#player:hover{
+    opacity: 1;
+    height: 40vh;
+}
+#player:hover img{
+    display: block;
+}
+#player audio{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+#player div{
+    height: 40%;
+    text-align: center;
+    padding-top: 1%;
+    font-size: 1.25rem;
+}
+@media screen and (orientation: portrait) {
+    #main{
+        width: 100%;
+    }
+    #queue{
+        display: none;
+    }
 }
