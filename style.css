@@ -65,6 +65,9 @@ textarea:focus, input:focus{
     flex-wrap: wrap;
     justify-content: space-between;
 }
+#main #latest div{
+    width: 23vw;
+}
 #main #latest div img{
     height: 12vh;
     width: 9vw;
@@ -296,7 +299,22 @@ textarea:focus, input:focus{
     #main{
         width: 100%;
     }
+    #carousel img{
+        width: 30vw;
+        margin-top: -5vh;
+    }
+    #main #latest div{
+        width: 40vw;
+    }
+    #main #latest div img{
+        height: 7vh;
+        width: 12vw;
+    }
     #queue{
         display: none;
+    }
+    #contact{
+        padding-bottom: 5vh;
+        margin-top: -12vh;
     }
 }

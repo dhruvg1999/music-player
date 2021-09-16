@@ -244,7 +244,26 @@ textarea:focus, input:focus{
     #main{
         width: 100%;
     }
+    #main #cover{
+        width: 99%;
+        font-size: 1.7rem;
+        line-height: 2.5rem;
+    }
+    #main a #song{
+        width: 99%;
+    }
+    #main a #song #fav{
+        position: absolute;
+        margin-left: 80%;
+    }
+    #main a #song #add{
+        position: absolute;
+        margin-left: 85%;
+    }
     #queue{
         display: none;
+    }
+    #contact{
+        padding-bottom: 5vh;
     }
 }
